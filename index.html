@@ -459,7 +459,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal with Cards</title>
+    <title>Modal with Auto-Loop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -601,13 +601,13 @@
     const modalContent = document.getElementById('modalContent');
     const modalImage = document.getElementById('modalImage');
 
+    let currentIndex = 0;
+
     // Generate cards dynamically
-    cardData.forEach(data => {
+    cardData.forEach((data, index) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.setAttribute('data-title', data.title);
-        card.setAttribute('data-content', data.content);
-        card.setAttribute('data-image', data.image);
+        card.setAttribute('data-index', index);
         card.innerHTML = `
             <h3>${data.title}</h3>
             <img src="${data.image}" alt="${data.title}">
@@ -617,13 +617,19 @@
 
         // Add click event listener
         card.addEventListener('click', () => {
-            modalTitle.textContent = data.title;
-            modalContent.textContent = data.content;
-            modalImage.src = data.image;
-            modal.style.display = 'flex';
-            document.body.classList.add('modal-open'); // Disable scrolling
+            currentIndex = index;
+            showModal(currentIndex);
         });
     });
+
+    function showModal(index) {
+        const data = cardData[index];
+        modalTitle.textContent = data.title;
+        modalContent.textContent = data.content;
+        modalImage.src = data.image;
+        modal.style.display = 'flex';
+        document.body.classList.add('modal-open'); // Disable scrolling
+    }
 
     // Close modal
     closeModal.addEventListener('click', () => {
@@ -634,7 +640,21 @@
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
-            document.body.classList.rem
+            document.body.classList.remove('modal-open'); // Enable scrolling
+        }
+    });
+
+    // Auto-loop to next card
+    modal.addEventListener('click', (e) => {
+        if (e.target !== closeModal && e.target !== modal) return; // Prevent unintended clicks
+        currentIndex = (currentIndex + 1) % cardData.length; // Loop back to first card
+        showModal(currentIndex);
+    });
+</script>
+
+</body>
+</html>
+
 
     </section>
 
