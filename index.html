@@ -511,7 +511,7 @@
             card.setAttribute('data-image', data.image);
             card.innerHTML = `
                 <h3>${data.title}</h3>
-                <img src="${data.image}" alt="${data.title}">
+                <img src="${data.images}" alt="${data.title}">
                 <p>${data.content}</p>
             `;
             cardsContainer.appendChild(card);
@@ -520,7 +520,7 @@
             card.addEventListener('click', () => {
                 modalTitle.textContent = data.title;
                 modalContent.textContent = data.content;
-                modalImage.src = data.image;
+                modalImage.src = data.images;
                 modal.style.display = 'flex';
             });
         });
