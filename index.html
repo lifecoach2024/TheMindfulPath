@@ -108,23 +108,24 @@
 </div>
 
 <style>
-/* General styles for slider images */
+/* General styles for slider images to ensure they maintain rectangular aspect ratio */
 .home-slider .slider-item {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover; /* Ensures images cover the entire area */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition of images */
+  height: 60vh; /* Adjust the height for a good aspect ratio */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   /* Force background for the first slider item */
   .home-slider .slider-item:nth-of-type(1) {
-    background-image: url('images/head-1.jpg') !important;
+    background-image: url('images/head-3.jpg') !important;
   }
 
   /* Force background for the second slider item */
   .home-slider .slider-item:nth-of-type(2) {
-    background-image: url('images/head-3.jpg') !important;
+    background-image: url('images/head-1.jpg') !important;
   }
 
   /* Force background for the third slider item */
@@ -132,27 +133,29 @@
     background-image: url('images/head-7.jpg') !important;
   }
 
-  /* Adjust the height of the slider items */
+  /* Ensure the height of the images is rectangular and not cut */
   .home-slider .slider-item {
-    height: 50vh !important; /* Adjust for mobile screens */
+    height: 50vh; /* Lower the height for mobile screens */
   }
 
   /* Adjust the text size and padding for better readability on mobile */
   .home-slider .slider-item .text h1 {
-    font-size: 24px; /* Adjust text size for mobile */
-    padding: 0 20px; /* Add some padding to prevent text from touching the edges */
+    font-size: 24px;
+    padding: 0 20px;
   }
 
   .home-slider .slider-item .text h2 {
-    font-size: 20px; /* Adjust text size for mobile */
-    padding: 0 20px; /* Add some padding */
+    font-size: 20px;
+    padding: 0 20px;
   }
 
   .home-slider .slider-item .text p {
-    padding: 0 20px; /* Ensure the button has space around it */
+    padding: 0 20px;
   }
 }
 </style>
+
+
 
 <!-- Intro Section -->
 <section class="intro py-5 bg-light">
