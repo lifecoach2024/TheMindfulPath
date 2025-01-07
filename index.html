@@ -147,30 +147,21 @@
 }
 
 @media (max-width: 768px) {
-  .hero-wrap {
-    height: auto; /* Allow the height to adjust for smaller screens */
-  }
-
-  /* Change image for mobile (below 768px) */
   .home-slider .slider-item:nth-child(1) {
-    background-image: url('images/head-1-mobile.jpg'); /* New mobile image */
-    background-position: center center;
+    background-image: url('images/head-1-mobile.jpg') !important; /* New mobile image with !important */
+    background-position: center center !important;
   }
 
   .home-slider .slider-item:nth-child(2) {
-    background-image: url('images/head-5-mobile.jpg); /* New mobile image */
-    background-position: center center;
-  
+    background-image: url('images/head-3-mobile.jpg') !important; /* New mobile image with !important */
+    background-position: center center !important;
+  }
 
   .home-slider .slider-item:nth-child(3) {
-    background-image: url('images/head-9-mobile.jpg'); /* New mobile image */
-    background-position: center center;
+    background-image: url('images/bg-3-mobile.jpg') !important; /* New mobile image with !important */
+    background-position: center center !important;
   }
-
-  .home-slider .slider-item {
-    height: 50vh; /* Adjust the height for mobile screens */
-  }
-
+}
   .container {
     max-width: 90%; /* Prevent the container from stretching too wide */
   }
