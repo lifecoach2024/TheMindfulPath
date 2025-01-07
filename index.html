@@ -108,12 +108,12 @@
 </div>
 
 <style>
-	.hero-wrap {
+/* Hero Section */
+.hero-wrap {
   position: relative;
   overflow: hidden;
   height: 100vh; /* Full height of the screen */
 }
-
 
 /* General Styles for All Screens */
 .home-slider .slider-item {
@@ -126,17 +126,17 @@
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
   /* First Slide */
-  .home-slider .slider-item:nth-child(1) {
+  .home-slider > .slider-item:nth-child(1) {
     background-image: url('images/head-1.jpg') !important;
   }
 
   /* Second Slide */
-  .home-slider .slider-item:nth-child(2) {
+  .home-slider > .slider-item:nth-child(2) {
     background-image: url('images/head-5.jpg') !important;
   }
 
   /* Third Slide */
-  .home-slider .slider-item:nth-child(3) {
+  .home-slider > .slider-item:nth-child(3) {
     background-image: url('images/head-7.jpg') !important;
   }
 
@@ -144,8 +144,8 @@
   .home-slider .slider-item {
     height: 50vh; /* Adjust to fit mobile screens */
   }
-}
 
+  /* Container and Text Adjustments */
   .container {
     max-width: 90%; /* Prevent the container from stretching too wide */
   }
