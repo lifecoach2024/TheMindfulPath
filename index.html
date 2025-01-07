@@ -108,38 +108,29 @@
 </div>
 
 <style>
-/* Hero Section */
-/* General styles for all screens */
-.home-slider .slider-item {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Default height */
-}
-
 /* Mobile-specific styles */
-* Mobile-specific styles */
 @media (max-width: 768px) {
-  /* Apply the first background image */
-  .home-slider .slider-item:nth-child(1) {
-    background-image: url('images/head-1.jpg') !important;
+  /* Force background for the first slider item */
+  .home-slider .slider-item:nth-of-type(1) {
+    background-image: url('images/head-01.jpg') !important;
   }
 
-  /* Apply the second background image */
-  .home-slider .slider-item:nth-child(2) {
+  /* Force background for the second slider item */
+  .home-slider .slider-item:nth-of-type(2) {
     background-image: url('images/head-3.jpg') !important;
   }
 
-  /* Apply the third background image */
-  .home-slider .slider-item:nth-child(3) {
+  /* Force background for the third slider item */
+  .home-slider .slider-item:nth-of-type(3) {
     background-image: url('images/head-7.jpg') !important;
   }
 
-  /* Adjust height for mobile */
+  /* Adjust the height of the slider items */
   .home-slider .slider-item {
-    height: 50vh; /* Adjust for smaller screens */
+    height: 50vh !important; /* Adjust for mobile screens */
   }
 }
+
 <!-- Intro Section -->
 <section class="intro py-5 bg-light">
   <div class="container">
