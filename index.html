@@ -109,13 +109,7 @@
 
 <style>
 /* Hero Section */
-.hero-wrap {
-  position: relative;
-  overflow: hidden;
-  height: 100vh; /* Full height of the screen */
-}
-
-/* General Styles for All Screens */
+/* General styles for all screens */
 .home-slider .slider-item {
   background-size: cover;
   background-position: center center;
@@ -123,44 +117,26 @@
   height: 100vh; /* Default height */
 }
 
-/* Mobile-Specific Styles */
+/* Mobile-specific styles */
 @media (max-width: 768px) {
-  /* Specific Mobile Backgrounds */
-  .home-slider > .slider-item:nth-child(1) {
-    background-image: url('./images/head-01.jpg') !important;
+  /* Mobile-specific Background Images */
+  .home-slider .slider-item:nth-child(1) {
+    background-image: url('images/head-01.jpg') !important;
   }
 
-  .home-slider > .slider-item:nth-child(2) {
-    background-image: url('./images/head-3.jpg') !important;
+  .home-slider .slider-item:nth-child(2) {
+    background-image: url('images/head-3.jpg') !important;
   }
 
-  .home-slider > .slider-item:nth-child(3) {
-    background-image: url('./images/head-7.jpg') !important;
+  .home-slider .slider-item:nth-child(3) {
+    background-image: url('images/head-7.jpg') !important;
   }
 
-  /* Mobile-Specific Height Adjustments */
+  /* Adjust height for mobile */
   .home-slider .slider-item {
-    height: 50vh; /* Adjust height for smaller screens */
-  }
-
-  /* Text Adjustments for Mobile */
-  .text {
-    padding: 15px;
-  }
-
-  .text h2 {
-    font-size: 18px;
-  }
-
-  .text h1 {
-    font-size: 24px;
-  }
-
-  .text .btn {
-    padding: 12px 25px;
+    height: 50vh; /* Adjust for smaller screens */
   }
 }
-
 <!-- Intro Section -->
 <section class="intro py-5 bg-light">
   <div class="container">
