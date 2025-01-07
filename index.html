@@ -117,7 +117,6 @@
 .home-slider .slider-item {
   position: relative;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -134,6 +133,7 @@
 .text {
   position: relative;
   z-index: 1;
+  padding: 20px; /* Add padding to prevent text from touching edges */
 }
 
 .text h2, .text h1 {
@@ -151,29 +151,44 @@
     height: auto; /* Allow the height to adjust for smaller screens */
   }
 
+  .home-slider .slider-item:nth-child(1) {
+    background-position: left center; /* For the first image, show the left side */
+  }
+
+  .home-slider .slider-item:nth-child(2) {
+    background-position: left bottom; /* For the second image, show the left bottom angle */
+  }
+
+  .home-slider .slider-item:nth-child(3) {
+    background-position: right bottom; /* For the third image, show the right bottom angle */
+  }
+
   .home-slider .slider-item {
     background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center;
     height: 300px; /* Adjust the height for mobile screens */
   }
 
+  .container {
+    max-width: 90%; /* Prevent the container from stretching too wide */
+  }
+
   .text {
-    padding: 20px; /* Add some padding around the text */
+    padding: 15px; /* Slightly reduce padding on mobile */
   }
 
   .text h2 {
-    font-size: 20px; /* Reduce the size of the heading on mobile */
+    font-size: 18px; /* Reduce the size of the heading on mobile */
   }
 
   .text h1 {
-    font-size: 28px; /* Adjust the size of the subheading */
+    font-size: 24px; /* Adjust the size of the subheading */
   }
 
   .text .btn {
-    padding: 12px 30px; /* Adjust button size */
+    padding: 12px 25px; /* Adjust button size */
   }
 }
-</style>
+
 
 
 <!-- Intro Section -->
