@@ -108,6 +108,14 @@
 </div>
 
 <style>
+/* General styles for slider images */
+.home-slider .slider-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mobile-specific styles */
 @media (max-width: 768px) {
   /* Force background for the first slider item */
   .home-slider .slider-item:nth-of-type(1) {
@@ -144,6 +152,7 @@
     padding: 0 20px; /* Ensure the button has space around it */
   }
 }
+</style>
 
 <!-- Intro Section -->
 <section class="intro py-5 bg-light">
