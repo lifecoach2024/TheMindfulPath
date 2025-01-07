@@ -114,54 +114,38 @@
   height: 100vh; /* Full height of the screen */
 }
 
+
+/* General Styles for All Screens */
 .home-slider .slider-item {
-  position: relative;
-  background-size: cover; /* Ensure the image maintains aspect ratio */
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh; /* Default height */
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color */
-}
-
-.text {
-  position: relative;
-  z-index: 1;
-  padding: 20px; /* Add padding to prevent text from touching edges */
-}
-
-.text h2, .text h1 {
-  color: #fff; /* Adjust the text color */
-}
-
-.text .btn {
-  background-color: #fff;
-  color: #000;
-  padding: 10px 20px;
-}
-
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
+  /* First Slide */
   .home-slider .slider-item:nth-child(1) {
-    background-image: url('images/head-1.jpg') !important; /* New mobile image with !important */
-    background-position: center center !important;
+    background-image: url('images/head-1.jpg') !important;
   }
 
+  /* Second Slide */
   .home-slider .slider-item:nth-child(2) {
-    background-image: url('images/head-5.jpg') !important; /* New mobile image with !important */
-    background-position: center center !important;
+    background-image: url('images/head-5.jpg') !important;
   }
 
+  /* Third Slide */
   .home-slider .slider-item:nth-child(3) {
-    background-image: url('images/head-7.jpg') !important; /* New mobile image with !important */
-    background-position: center center !important;
+    background-image: url('images/head-7.jpg') !important;
+  }
+
+  /* Adjust height for mobile */
+  .home-slider .slider-item {
+    height: 50vh; /* Adjust to fit mobile screens */
   }
 }
+
   .container {
     max-width: 90%; /* Prevent the container from stretching too wide */
   }
