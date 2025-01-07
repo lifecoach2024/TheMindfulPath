@@ -136,6 +136,17 @@
 
 <!-- CSS for Mobile Compatibility -->
 <style>
+	@media (max-width: 768px) {
+  /* Ensure the button stays within the container */
+  .btn {
+    width: 100%;
+    max-width: 300px; /* Limit button width for larger screens */
+    padding: 12px 0; /* Adjust padding for better fit */
+    font-size: 16px; /* Adjust text size for mobile */
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Make the button a block element */
+  }
+}
   @media (max-width: 768px) {
     .story-wrap {
       flex-direction: column;
