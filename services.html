@@ -213,51 +213,31 @@
   START NOW $119
 </a>
 
-<style>
-  .btn::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    border-radius: 30px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-    z-index: -1;
-  }
-  .btn:hover {
-    background: linear-gradient(to bottom, #45A049, #1B5E20);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 18px rgba(0, 0, 0, 0.25);
-  }
-  .btn:active {
-    transform: translateY(2px);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
-  }
+ <style>
+              .btn::after {
+                content: '';
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                right: 3px;
+                bottom: 3px;
+                border-radius: 30px;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                z-index: -1;
+              }
+              .btn:hover {
+                background: linear-gradient(to bottom, #45A049, #1B5E20);
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 18px rgba(0, 0, 0, 0.25);
+              }
+              .btn:active {
+                transform: translateY(2px);
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
+              }
+            </style>
+          </div>
+        </div>
 
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .story-wrap {
-      flex-direction: column;
-      padding: 20px;
-    }
-    .story-wrap .text, .story-wrap .image {
-      padding: 10px;
-      width: 100%;
-    }
-    .btn {
-      width: 100%;
-      margin-top: 10px;
-    }
-    .btn::after {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-  }
-</style>
-</div>
           </div>
 
           <!-- Story Content -->
@@ -314,6 +294,21 @@
       </div>
     </div>
   </div>
+	style>
+  @media (max-width: 767px) {
+    .story-wrap {
+      flex-direction: column !important; /* Stack content on mobile */
+    }
+    .text {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+    .story-wrap img {
+      width: 100%; /* Make image responsive */
+      margin-top: 20px;
+    }
+  }
+</style>
 </section>
 <!-- Second Segment -->
 <section>
