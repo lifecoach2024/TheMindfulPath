@@ -108,7 +108,7 @@
 </div>
 
 <style>
-.hero-wrap {
+	.hero-wrap {
   position: relative;
   overflow: hidden;
   height: 100vh; /* Full height of the screen */
@@ -151,20 +151,24 @@
     height: auto; /* Allow the height to adjust for smaller screens */
   }
 
+  /* Change image for mobile (below 768px) */
   .home-slider .slider-item:nth-child(1) {
-    background-position: left center; /* Show left side of first image */
+    background-image: url('images/head-1-mobile.jpg'); /* New mobile image */
+    background-position: center center;
   }
 
   .home-slider .slider-item:nth-child(2) {
-    background-position: left bottom; /* Show left bottom angle of second image */
-  }
+    background-image: url('images/head-5-mobile.jpg); /* New mobile image */
+    background-position: center center;
+  
 
   .home-slider .slider-item:nth-child(3) {
-    background-position: right bottom; /* Show right side of third image */
+    background-image: url('images/head-9-mobile.jpg'); /* New mobile image */
+    background-position: center center;
   }
 
   .home-slider .slider-item {
-    height: 300px; /* Adjust the height for mobile screens */
+    height: 50vh; /* Adjust the height for mobile screens */
   }
 
   .container {
