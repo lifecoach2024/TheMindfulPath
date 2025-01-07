@@ -152,19 +152,21 @@
   }
 
   .home-slider .slider-item:nth-child(1) {
-    background-position: left center; /* For the first image, show the left side */
+    background-position: left top; /* Show left side of first image */
+    background-size: 100% 100%; /* Stretch the image to fit the container */
   }
 
   .home-slider .slider-item:nth-child(2) {
-    background-position: left bottom; /* For the second image, show the left bottom angle */
+    background-position: left bottom; /* Show left bottom angle of second image */
+    background-size: 100% 100%; /* Stretch the image to fit the container */
   }
 
   .home-slider .slider-item:nth-child(3) {
-    background-position: right bottom; /* For the third image, show the right bottom angle */
+    background-position: right bottom; /* Show right side of third image */
+    background-size: 100% 100%; /* Stretch the image to fit the container */
   }
 
   .home-slider .slider-item {
-    background-size: cover; /* Ensure the image covers the entire area */
     height: 300px; /* Adjust the height for mobile screens */
   }
 
@@ -188,7 +190,6 @@
     padding: 12px 25px; /* Adjust button size */
   }
 }
-
 
 
 <!-- Intro Section -->
