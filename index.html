@@ -74,7 +74,87 @@
         </div>
       </div>
     </div>
+<style>
+.hero-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Full height of the screen */
+}
 
+.home-slider .slider-item {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color */
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  padding: 20px; /* Add padding to prevent text from touching edges */
+}
+
+.text h2, .text h1 {
+  color: #fff; /* Adjust the text color */
+}
+
+.text .btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    height: auto; /* Allow the height to adjust for smaller screens */
+  }
+
+  .home-slider .slider-item:nth-child(1) {
+    background-position: left center; /* For the first image, show the left side */
+  }
+
+  .home-slider .slider-item:nth-child(2) {
+    background-position: left bottom; /* For the second image, show the left bottom angle */
+  }
+
+  .home-slider .slider-item:nth-child(3) {
+    background-position: right bottom; /* For the third image, show the right bottom angle */
+  }
+
+  .home-slider .slider-item {
+    background-size: cover; /* Ensure the image covers the entire area */
+    height: 300px; /* Adjust the height for mobile screens */
+  }
+
+  .container {
+    max-width: 90%; /* Prevent the container from stretching too wide */
+  }
+
+  .text {
+    padding: 15px; /* Slightly reduce padding on mobile */
+  }
+
+  .text h2 {
+    font-size: 18px; /* Reduce the size of the heading on mobile */
+  }
+
+  .text h1 {
+    font-size: 24px; /* Adjust the size of the subheading */
+  }
+
+  .text .btn {
+    padding: 12px 25px; /* Adjust button size */
+  }
+}
     <div class="slider-item" style="background-image:url(images/bg-2.jpg);">
       <div class="overlay"></div>
       <div class="container">
@@ -89,7 +169,87 @@
         </div>
       </div>
     </div>
+<style>
+.hero-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Full height of the screen */
+}
 
+.home-slider .slider-item {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color */
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  padding: 20px; /* Add padding to prevent text from touching edges */
+}
+
+.text h2, .text h1 {
+  color: #fff; /* Adjust the text color */
+}
+
+.text .btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    height: auto; /* Allow the height to adjust for smaller screens */
+  }
+
+  .home-slider .slider-item:nth-child(1) {
+    background-position: left center; /* For the first image, show the left side */
+  }
+
+  .home-slider .slider-item:nth-child(2) {
+    background-position: left bottom; /* For the second image, show the left bottom angle */
+  }
+
+  .home-slider .slider-item:nth-child(3) {
+    background-position: right bottom; /* For the third image, show the right bottom angle */
+  }
+
+  .home-slider .slider-item {
+    background-size: cover; /* Ensure the image covers the entire area */
+    height: 300px; /* Adjust the height for mobile screens */
+  }
+
+  .container {
+    max-width: 90%; /* Prevent the container from stretching too wide */
+  }
+
+  .text {
+    padding: 15px; /* Slightly reduce padding on mobile */
+  }
+
+  .text h2 {
+    font-size: 18px; /* Reduce the size of the heading on mobile */
+  }
+
+  .text h1 {
+    font-size: 24px; /* Adjust the size of the subheading */
+  }
+
+  .text .btn {
+    padding: 12px 25px; /* Adjust button size */
+  }
+}
     <div class="slider-item" style="background-image:url(images/bg-3.jpg);">
       <div class="overlay"></div>
       <div class="container">
