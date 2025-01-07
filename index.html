@@ -116,7 +116,7 @@
 
 .home-slider .slider-item {
   position: relative;
-  background-size: cover;
+  background-size: cover; /* Ensure the image maintains aspect ratio */
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -152,18 +152,15 @@
   }
 
   .home-slider .slider-item:nth-child(1) {
-    background-position: left top; /* Show left side of first image */
-    background-size: 100% 100%; /* Stretch the image to fit the container */
+    background-position: left center; /* Show left side of first image */
   }
 
   .home-slider .slider-item:nth-child(2) {
     background-position: left bottom; /* Show left bottom angle of second image */
-    background-size: 100% 100%; /* Stretch the image to fit the container */
   }
 
   .home-slider .slider-item:nth-child(3) {
     background-position: right bottom; /* Show right side of third image */
-    background-size: 100% 100%; /* Stretch the image to fit the container */
   }
 
   .home-slider .slider-item {
