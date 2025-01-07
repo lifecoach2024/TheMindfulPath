@@ -74,6 +74,12 @@
         </div>
       </div>
     </div>
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Force background for the first slider item */
+  .home-slider .slider-item:nth-of-type(1) {
+    background-image: url('images/head-1.jpg') !important;
+  }
 
     <div class="slider-item" style="background-image:url(images/bg-2.jpg);">
       <div class="overlay"></div>
@@ -89,7 +95,13 @@
         </div>
       </div>
     </div>
-
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+	   /* Force background for the second slider item */
+  .home-slider .slider-item:nth-of-type(2) {
+    background-image: url('images/head-5.jpg') !important;
+  }
+	  
     <div class="slider-item" style="background-image:url(images/bg-3.jpg);">
       <div class="overlay"></div>
       <div class="container">
@@ -106,7 +118,15 @@
     </div>
   </div>
 </div>
+@media (max-width: 768px) {
+ 
 
+ 
+
+  /* Force background for the third slider item */
+  .home-slider .slider-item:nth-of-type(3) {
+    background-image: url('images/head-7.jpg') !important;
+  }
 <style>
 /* General styles for slider images to ensure they maintain rectangular aspect ratio */
 .home-slider .slider-item {
@@ -118,15 +138,9 @@
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-  /* Force background for the first slider item */
-  .home-slider .slider-item:nth-of-type(1) {
-    background-image: url('images/head-3.jpg') !important;
-  }
+ 
 
-  /* Force background for the second slider item */
-  .home-slider .slider-item:nth-of-type(2) {
-    background-image: url('images/head-1.jpg') !important;
-  }
+ 
 
   /* Force background for the third slider item */
   .home-slider .slider-item:nth-of-type(3) {
