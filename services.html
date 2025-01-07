@@ -84,29 +84,54 @@
 </a>
 
  <style>
-              .btn::after {
-                content: '';
-                position: absolute;
-                top: 3px;
-                left: 3px;
-                right: 3px;
-                bottom: 3px;
-                border-radius: 30px;
-                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-                z-index: -1;
-              }
-              .btn:hover {
-                background: linear-gradient(to bottom, #45A049, #1B5E20);
-                transform: translateY(-3px);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 18px rgba(0, 0, 0, 0.25);
-              }
-              .btn:active {
-                transform: translateY(2px);
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
-              }
-            </style>
-          </div>
-        </div>
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    z-index: -1;
+  }
+
+  .btn:hover {
+    background: linear-gradient(to bottom, #45A049, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Mobile Compatibility */
+  @media (max-width: 767px) {
+    .btn {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 16px;
+    }
+
+    .btn::after {
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px); /* Reduce hover effect on smaller screens */
+    }
+
+    .btn:active {
+      transform: translateY(1px); /* Slightly reduce active effect */
+    }
+  }
+</style>
+
 
           </div>
 
