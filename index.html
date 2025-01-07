@@ -58,6 +58,7 @@
 	  </nav>
     <!-- END nav -->
 <!-- Hero Section -->
+<!-- Hero Section -->
 <div class="hero-wrap">
   <div class="home-slider owl-carousel">
     <div class="slider-item" style="background-image:url(images/bg-1.jpg);">
@@ -108,7 +109,7 @@
 </div>
 
 <style>
-/* General styles for slider images to ensure they maintain rectangular aspect ratio */
+/* General styles for slider images */
 .home-slider .slider-item {
   background-size: cover; /* Ensures images cover the entire area */
   background-position: center center; /* Centers the image */
@@ -154,6 +155,25 @@
   }
 }
 </style>
+
+<!-- Owl Carousel JavaScript and Initialization -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.home-slider').owlCarousel({
+      items: 1, // Show one item at a time
+      loop: true, // Enable looping
+      autoplay: true, // Enable autoplay
+      autoplayTimeout: 3000, // Time between slides (in ms)
+      autoplayHoverPause: true, // Pause autoplay on hover
+      dots: true, // Show navigation dots
+      nav: true // Show navigation arrows
+    });
+  });
+</script>
+
 
 <!-- Intro Section -->
 <section class="intro py-5 bg-light">
